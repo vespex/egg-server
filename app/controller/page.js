@@ -6,6 +6,9 @@ class PageController extends Controller {
   async index() {
     await this.ctx.render('index.html');
   }
+  async demo() {
+    await this.ctx.render('demo.html');
+  }
   async snap() {
     await this.ctx.render('snap.html');
   }
