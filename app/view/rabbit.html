@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>天天玩飞机</title>
+  <style>
+    canvas {
+      display: block;
+    }
+    .center {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app">
+    <div class="index" v-title="'title'">
+      <div id="world"></div>
+      <div class="center">
+        point:
+        <span id="distValue"></span>
+        <span id="gameoverInstructions">game over</span>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.bootcss.com/three.js/r83/three.min.js"></script>
+  <script src="https://cdn.bootcss.com/gsap/latest/TweenMax.min.js"></script>
+  <script src="/public/static/js/rabbit.js"></script>
+  <script>
+    init();
+  </script>
+</body>
+</html>
+
+
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+
+
+
+<script>
+import { init } from '../assets/js/rabbit';
+export default {
+  name: 'index',
+  data() {
+    return {};
+  },
+  mounted() {
+    init();
+  },
+  methods: {},
+};
+</script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+
