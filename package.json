@@ -12,7 +12,8 @@
     "egg-scripts": "^2.11.0",
     "egg-sequelize": "^5.0.0",
     "egg-view-nunjucks": "^2.2.0",
-    "mysql2": "^1.6.5"
+    "mysql2": "^1.6.5",
+    "uuid": "^3.3.2"
   },
   "devDependencies": {
     "autod": "^3.0.1",

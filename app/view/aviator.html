@@ -1,11 +1,5 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <meta name="format-detection" content="telephone=no">
+{% extends "layout.html" %}
+{% block head %}
   <title>天天玩飞机</title>
   <style>
     #world {
@@ -22,19 +16,18 @@
       padding-top: 20px;
     }
     .info-board {
-        display: inline-block;
-        position: relative;
-        z-index: 1;
-        text-align: center;
-        background: rgba(255, 255, 255, 0.5);
-        padding: 10px 20px;
-        border-radius: 8px;
-        text-align: left;
-      }
-    </style>
-</head>
-
-<body>
+      display: inline-block;
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.5);
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-align: left;
+    }
+  </style>
+{% endblock %}
+{% block content %}
   <div id="app">
     <div class="three" v-title="'天天玩飞机'">
       <div class="info-board">
@@ -70,10 +63,4 @@
       world.addEventListener('click', () => this.start(), false);
     });
   </script>
-</body>
-</html>
-
-
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-
+{% endblock %}

@@ -16,7 +16,7 @@ module.exports = appInfo => {
   config.keys = appInfo.name + '_1557900729341_976';
 
   // add your middleware config here
-  config.middleware = [];
+  // config.middleware = [ 'resFormat' ];
   config.view = { defaultViewEngine: 'nunjucks' };
   config.sequelize = {
     dialect,
@@ -26,7 +26,9 @@ module.exports = appInfo => {
     database,
     port: 3306,
   };
-
+  config.cors = {
+    credentials: true,
+  };
   // add your user config here
   const userConfig = {
     // myAppName: 'egg',

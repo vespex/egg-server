@@ -21,6 +21,9 @@ class PageController extends Controller {
   async menu() {
     await this.ctx.render('menu.html');
   }
+  async css() {
+    await this.ctx.render('css.html');
+  }
 }
 
 module.exports = PageController;
