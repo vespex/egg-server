@@ -2,3 +2,12 @@ body, ul, dl, dd, p ,h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
 }
+a {
+  color: #333;
+}
+.index .list {
+  padding: 10px 40px;
+}
+.index .list li{
+  margin: 10px 0;
+}

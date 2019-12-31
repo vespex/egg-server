@@ -1,18 +1,13 @@
 {% extends "layout.html" %}
 {% block head %}
   <title>主页</title>
-  <style>
-    .demo1 h1{
-      letter-spacing: 0rem;
-    }
-  </style>
 {% endblock %}
 {% block content %}
-  <div id="app">
-    <ul>
-      <li><a href="/snap">打响指</a></li>
-      <li><a href="/aviator">玩飞机</a></li>
-      <li><a href="/rabbit">打兔子</a></li>
+  <div class="page index">
+    <ul class="list">
+      <li><a href="/snap" class="paper-btn">打响指</a></li>
+      <li><a href="/aviator" class="paper-btn">玩飞机</a></li>
+      <li><a href="/rabbit" class="paper-btn">玩兔子</a></li>
     </ul>
   </div>
 {% endblock %}
